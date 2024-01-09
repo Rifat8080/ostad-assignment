@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+:root{
+    --main-bg: #1D1D1B;
+    --secondary-bg: #FFED00;
+    --text:#FFFFFF;
+
+}
+
+.navbar {
+    background: var(--main-bg);
+  }
+  
+
+  .navbar .navbar-nav .nav-item a{
+    color: var(--text);
+  }
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Set text color to match your design */
+    text-align: left;
+}
+
