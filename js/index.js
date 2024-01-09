@@ -3,7 +3,10 @@ function checkAge() {
 
     if (age >= 18) {
       $('#adultModal').modal('show');
-    } else {
+    } else if (age <= 18 && age===1) {
       $('#childModal').modal('show');
+    }
+    else{
+        $('#errorModal').modal('show');
     }
   }
