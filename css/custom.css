@@ -35,3 +35,17 @@
     text-align: left;
 }
 
+.cards-section{
+    background: var(--main-bg);
+}
+
+.row .card{
+    background: var(--secondary-bg);
+    color: var(--main-bg);
+    text-align: center;
+}
+
+i {
+    font-size: 3rem;
+    color: #3498db;
+}

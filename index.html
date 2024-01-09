@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -56,30 +62,63 @@
 
       <!-- Check your age -->
 
-      <main class="container-fluid">
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" placeholder="Enter your age:" aria-label="Recipient's username" aria-describedby="button-addon2" id="age" min="0" required>
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="checkAge()">Check Age</button>
+        </div>
+      </div>
+
+      <!-- Adult Modal -->
+      <div class="modal fade" id="adultModal" tabindex="-1" role="dialog" aria-labelledby="adultModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              You are an adult
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Child Modal -->
+      <div class="modal fade" id="childModal" tabindex="-1" role="dialog" aria-labelledby="childModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              You are a child
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  <!-- Cards section -->
+      <main class="container-fluid  cards-section">
       <div class="row d-flex justify-content-center align-items-center p-5 ">
-        <div class="card col-4  " style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card col-4  p-3" style="width: 18rem; margin-right: 50px;">
+          <i class="fa-solid fa-id-card"></i>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">License Processing</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
 
-        <div class="card col-4" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card col-4 p-3" style="width: 18rem; margin-right: 50px;">
+          <i class="fa-solid fa-car"></i>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Driving Training</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
 
-        <div class="card col-4" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card col-4 p-3" style="width: 18rem;">
+          <i class="fa-solid fa-traffic-light"></i>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Road Safety Rules</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
